@@ -1,0 +1,440 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f6f8;
+    color: #303846;
+    line-height: 1.6;
+}
+
+/* Header */
+.site-header {
+    background-color: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    color: #253858;
+    font-size: 26px;
+}
+
+.logo span {
+    color: #3478c5;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #46546a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #3478c5;
+}
+
+/* Welcome Section */
+.welcome {
+    background-color: #eaf1f8;
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.eyebrow {
+    color: #3478c5;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.welcome h2 {
+    font-size: 38px;
+    color: #253858;
+    margin-bottom: 15px;
+}
+
+.welcome > p:not(.eyebrow) {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #586579;
+}
+
+.primary-link {
+    display: inline-block;
+    background-color: #3478c5;
+    color: white;
+    text-decoration: none;
+    padding: 11px 24px;
+    border-radius: 5px;
+}
+
+.primary-link:hover {
+    background-color: #245b98;
+}
+
+/* Main Content and Sidebar */
+.content-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+    padding: 45px 7%;
+    align-items: start;
+}
+
+.main-content {
+    min-width: 0;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+.section-heading {
+    margin-bottom: 22px;
+}
+
+.section-heading h2,
+.about-section h2 {
+    font-size: 25px;
+    color: #253858;
+    margin-bottom: 5px;
+}
+
+.section-heading p {
+    color: #778294;
+    font-size: 14px;
+}
+
+/* Resource Cards - CSS Grid */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.resource-card {
+    background-color: white;
+    border: 1px solid #e8eaee;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-4px);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.card-content h3 {
+    color: #253858;
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.card-content p {
+    color: #687386;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    color: #3478c5;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+/* Featured Learning */
+.featured {
+    margin-top: 45px;
+}
+
+.featured figure {
+    background-color: white;
+    padding: 12px;
+    border: 1px solid #e8eaee;
+    border-radius: 7px;
+}
+
+.featured figure img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+.featured figcaption {
+    color: #778294;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.learning-note {
+    margin-top: 22px;
+    background-color: white;
+    padding: 22px;
+    border: 1px solid #e8eaee;
+    border-radius: 7px;
+}
+
+.learning-note h3 {
+    color: #253858;
+    margin-bottom: 10px;
+}
+
+.learning-note p {
+    color: #687386;
+    margin-bottom: 12px;
+}
+
+.learning-note ul {
+    padding-left: 22px;
+    color: #586579;
+}
+
+/* Multimedia */
+.media-section {
+    margin-top: 45px;
+}
+
+.media-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.media-card {
+    flex: 1 1 250px;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #e8eaee;
+    border-radius: 7px;
+}
+
+.media-card h3 {
+    color: #253858;
+    margin-bottom: 8px;
+}
+
+.media-card p {
+    font-size: 14px;
+    color: #687386;
+    margin-bottom: 15px;
+}
+
+.media-card video {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.media-card audio {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.media-card .media-caption {
+    font-size: 12px;
+    color: #8993a2;
+    margin-bottom: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar-box {
+    background-color: white;
+    border: 1px solid #e8eaee;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.sidebar-box h2 {
+    color: #253858;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.sidebar-box article {
+    border-bottom: 1px solid #edf0f3;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.sidebar-box article:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.sidebar-box h3 {
+    font-size: 15px;
+    color: #3478c5;
+    margin-bottom: 5px;
+}
+
+.sidebar-box p,
+.sidebar-box li {
+    color: #687386;
+    font-size: 13px;
+}
+
+.sidebar-box ul {
+    padding-left: 18px;
+}
+
+.sidebar-box li {
+    margin-bottom: 9px;
+}
+
+.sidebar-box a {
+    color: #3478c5;
+    text-decoration: none;
+}
+
+.sidebar-box a:hover {
+    text-decoration: underline;
+}
+
+/* About */
+.about-section {
+    background-color: #ffffff;
+    padding: 40px 10%;
+    text-align: center;
+    border-top: 1px solid #e8eaee;
+}
+
+.about-section p {
+    max-width: 750px;
+    margin: 10px auto 0;
+    color: #687386;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #253858;
+    color: #dce4ef;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 13px;
+}
+
+.site-footer p + p {
+    margin-top: 5px;
+    color: #aab8cb;
+}
+
+/* Tablet Responsive Design */
+@media screen and (max-width: 900px) {
+
+    .content-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile Responsive Design */
+@media screen and (max-width: 600px) {
+
+    .site-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px 5%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .welcome {
+        padding: 55px 6%;
+    }
+
+    .welcome h2 {
+        font-size: 29px;
+    }
+
+    .content-layout {
+        padding: 30px 5%;
+    }
+
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-card img {
+        height: 200px;
+    }
+
+    .featured figure img {
+        height: 190px;
+    }
+
+    .sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .media-grid {
+        flex-direction: column;
+    }
+
+    .about-section {
+        padding: 30px 6%;
+    }
+
+}
